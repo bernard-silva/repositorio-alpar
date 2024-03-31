@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-primary);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+    margin-bottom: 10px;
+
+    color: var(--txt_primary);
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header>img {
+    margin-top: 20px;
+}
+
+main {
+    background-color: var(--bg-secondary);
+    padding: 30px 200px;
+    border-radius: 15px 15px 0 0;
+
+    width: 70vw;
+
+    font-weight: 500;
+    color: var(--txt_secondary);
+}
+
+main section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div p {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: var(--txt_primary);
+}
+
+section h2 {
+    margin-top: 15px;
+
+    font-size: 28px;
+    color: var(--txt_quarter);
+}
+
+section h3 {
+    font-size: 18px;
+
+    color: var(--txt_primary);
+}
+
+section ul h3:nth-child(n) {
+    margin-top: 10px;
+}
+
+section ul {
+    padding: 10px 30px;
+    border-radius: 5px;
+
+    background: var(--bg-primary);
+    color: var(--txt_third);
+}
+
+.description_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description_price p {
+    margin-right: 40px;
+}
+
+.description_price li {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 20px 200px;
+    width: 70%;
+
+    /* color: var(--txt_secondary); */
+    color: var(--txt_quarter);
+}
+
+table,
+th,
+td,
+tr {
+    border: 1px solid var(--txt_quarter);
+    border-collapse: collapse;
+    padding: 15px 12px;
+    margin: 25px 100px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+table tbody th,
+table tbody td {
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70vw;
+    padding: 10px;
+    padding: 30px 200px;
+    border-radius: 0 0 15px 15px;
+
+    background: var(--bg-third);
+    color: var(--txt_primary);
+
+    margin-bottom: 30px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--txt_primary);
+}
+
+footer p a {
+    cursor: text;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+    padding: 10px;
+}
+
+footer ul li+li {
+    margin-left: 30px;
+}
+
+footer ul li {
+    font-size: 22px;
+}
+
+footer ul li a:hover {
+    color: var(--bg-secondary);
+}

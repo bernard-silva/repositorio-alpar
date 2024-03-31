@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./css/global.css">
+
+    <title>Cafeteria</title>
 </head>
 
 <body>
     <header>
         <h1>Café Delícia - Cardápio</h1>
-        <img src="coffee.png" alt="Logomarca do Café Delicia" style="width: 100px;">
+        <img src="./assets/coffee.png" alt="Logomarca do Café Delicia" style="width: 100px;"
+            class="animate__animated animate__slideInLeft" />
     </header>
     <main>
         <section>
-            <p>Apresentação do Cardápio do Café Delícia</p>
+            <div>
+                <p>MENU</p>
+            </div>
             <ol>
                 <li>
                     <h2>Cafés</h2>
@@ -23,7 +31,7 @@
                     <li>
                         <h3>Espresso</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Café expresso curto delicinha.</p>
                         </li>
@@ -34,7 +42,7 @@
                     <li>
                         <h3>Duplo</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Café expresso longo delícia em dobro.</p>
                         </li>
@@ -45,7 +53,7 @@
                     <li>
                         <h3>Cappuccino</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Cappuccino, leite e café, uma combinação deliciosa.</p>
                         </li>
@@ -61,7 +69,7 @@
                     <li>
                         <h3>Bolo de Cenoura</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Bolo de cenoura com cobertura de chocolate delicinha.</p>
                         </li>
@@ -72,7 +80,7 @@
                     <li>
                         <h3>Bolo de Fuba Delicinha</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Bolo da vovó de fuba cremoso delicinha.</p>
                         </li>
@@ -83,7 +91,7 @@
                     <li>
                         <h3>Bolo de Chocolate Simples</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Bolo de chocolate delicinha.</p>
                         </li>
@@ -99,7 +107,7 @@
                     <li>
                         <h3>Pão na Chapa Delicinha</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Pão com queijo na chapa delicinha.</p>
                         </li>
@@ -110,7 +118,7 @@
                     <li>
                         <h3>Misto Quente Delicinha</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Pão com queijo e presunto na chapa delicinha.</p>
                         </li>
@@ -121,7 +129,7 @@
                     <li>
                         <h3>Bauru Delicinha</h3>
                     </li>
-                    <ul>
+                    <ul class="description_price">
                         <li>
                             <p>Pão com queijo, presunto e tomate delicinha.</p>
                         </li>
@@ -172,12 +180,14 @@
     </main>
     <footer>
         <h2>Informações de Contato</h2>
-        <p>Endereço: MacLaren’s, 240 West 55th Street</p>
+        <p>Endereço: <a href="https://berns-easter-eggs.vercel.app/SwarleyMacLarensPub01/" target="_blank">MacLaren’s,
+                240 West 55th Street</a></p>
         <p>Telefone: 1 (212) 957-3536</p>
+        <!-- <p>Telefone: <a href="#" target="_blank">1-917-555-0197</a></p> -->
         <ul>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.tiktok.com/" target="_blank">TitTok</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a></li>
         </ul>
     </footer>
 </body>
