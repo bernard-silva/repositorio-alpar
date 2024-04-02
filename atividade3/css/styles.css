@@ -68,7 +68,8 @@
     font-size: 16px;
 }
 
-.form_control input:focus {
+.form_control input:focus,
+.form_login button:focus {
     outline-color: var(--bg-secondary);
 }
 
@@ -83,7 +84,6 @@
     background: var(--bg-secondary);
     border: none;
     border-radius: 5px;
-
 }
 
 .form_login button:hover {
