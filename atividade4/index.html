@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/images/himym_yellowumbrella.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>podHIMYM</title>
+</head>
+
+<body>
+    <header>
+        <h1>podHIMYM</h1>
+        <h4>O podcast da sua série favorita How I Met Your Mother!</h4>
+    </header>
+    <main class="container">
+        <section class="video_container gradient-bg">
+            <div class="relative">
+                <video id="videoPlayer" src=" ./assets/opening/podhimym_opening.mp4"
+                    poster="./assets/images/podhimym_opening_cover.jpg" width="600px">
+                </video>
+            </div>
+            <button id="btnVideo" class='paused'>
+                <i class="fa-solid fa-circle-play fa-2x"></i>
+            </button>
+        </section>
+        <section class="controls">
+            <span id="showControls">Mostrar Controles do Vídeo</span>
+            <span id="hideControls" style="display: none;">Ocultar Controles do Vídeo</span>
+        </section>
+        <section class="episodes">
+            <div class="border_card">
+                <hr />
+                <div class="card">
+                    <div>
+                        <img src="./assets/images/podhimym_episode_cover.png" alt="">
+                    </div>
+                    <div>
+                        <h4>01x07 - The MathMaker</h4>
+                        <p>Ao lado de Barney, Ted vai a uma empresa de encontros e descobre que não existem mulheres
+                            solteiras para o seu perfil.
+                            <span id="showControls1">Mostrar Controles</span>
+                            <span id="hideControls1" style="display: none;">Ocultar Controles</span>
+                        </p>
+                        <div>
+                            <audio id='audio1' src="./assets/episodes/podhimym_ep_01x07.mp3"></audio>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btnAudio1" class='paused'>
+                            <i class="fa-solid fa-circle-play fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border_card">
+                <hr />
+                <div class="card">
+                    <div>
+                        <img src="./assets/images/podhimym_episode_cover.png" alt="">
+                    </div>
+                    <div>
+                        <h4>01x07 - The MathMaker</h4>
+                        <p>Ao lado de Barney, Ted vai a uma empresa de encontros e descobre que não existem mulheres
+                            solteiras para o seu perfil.
+                            <span id="showControls2">Mostrar Controles</span>
+                            <span id="hideControls2" style="display: none;">Ocultar Controles</span>
+                        </p>
+                        <div>
+                            <audio id='audio2' src="./assets/episodes/podhimym_ep_01x07.mp3"></audio>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btnAudio2" class='paused'>
+                            <i class="fa-solid fa-circle-play fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border_card">
+                <hr />
+                <div class="card">
+                    <div>
+                        <img src="./assets/images/podhimym_episode_cover.png" alt="">
+                    </div>
+                    <div>
+                        <h4>01x07 - The MathMaker</h4>
+                        <p>Ao lado de Barney, Ted vai a uma empresa de encontros e descobre que não existem mulheres
+                            solteiras para o seu perfil.
+                            <span id="showControls3">Mostrar Controles</span>
+                            <span id="hideControls3" style="display: none;">Ocultar Controles</span>
+                        </p>
+                        <div>
+                            <audio id='audio3' src="./assets/episodes/podhimym_ep_01x07.mp3"></audio>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btnAudio3" class='paused'>
+                            <i class="fa-solid fa-circle-play fa-2x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <article class="player">
+        <nav>
+            <ul>
+                <button>
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button id="btnMainPlay" class="paused">
+                    <i class="fas fa-circle-play"></i>
+                </button>
+                <!-- <button id="btn_pause" class="pause">
+                    <i class="fas fa-pause-circle"></i>
+                </button> -->
+                <button>
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </ul>
+        </nav>
+        <div class="progress_bar_time">
+            <div class="time">
+                <span id="currentTime">0:00</span>
+            </div>
+            <div class="progress_bar">
+                <div class="progress"></div>
+            </div>
+            <div class="time">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </article>
+    <footer class="footer">
+        <p>
+            &copy;2024 Copyright - Desenvolvido por <a href="https://berns-easter-eggs.vercel.app/TheMatchMaker02"
+                target="_blank">podHIMYM</a>
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
