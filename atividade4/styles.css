@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    color: #fff;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4d4d4d #2a2a2a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #4d4d4d;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    border: 3px solid #4d4d4d;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        'header'
+        'main'
+        'player'
+        'footer';
+    grid-template-rows: 90px 1fr 90px 30px;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    background: #ff7f07;
+    padding: 10px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+main {
+    grid-area: main;
+    overflow-y: scroll;
+    background: #121212;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background: rgb(18, 18, 18);
+    background: linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(255, 127, 7, 1) 100%);
+
+    position: relative;
+}
+
+#btnVideo {
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.8;
+}
+
+#btnVideo:hover {
+    margin-top: -1px;
+    opacity: 1;
+}
+
+.episodes {
+    width: 45%;
+    padding: 10px 20px;
+}
+
+.border_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.border_card>hr {
+    width: 98%;
+    height: 1px;
+    border: 0px;
+    background-color: #dddddd;
+    border-top: 1px solid #2a2a2a;
+    margin-bottom: -1px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 150px 1fr 50px;
+
+    width: 100%;
+    padding: 10px;
+    margin: 0 10px 10px;
+}
+
+.video_container video,
+.card img,
+.card:hover {
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+.card div:nth-child(2) {
+    padding: 0 10px 0 0;
+}
+
+.card div h4 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.card p {
+    font-size: 13.5px;
+    color: rgba(221, 221, 221, 0.6);
+}
+
+#showControls,
+#hideControls,
+#showControls1,
+#hideControls1,
+#showControls2,
+#hideControls2,
+#showControls3,
+#hideControls3 {
+    font-size: 13px;
+}
+
+#showControls:hover,
+#hideControls:hover,
+#showControls1:hover,
+#hideControls1:hover,
+#showControls2:hover,
+#hideControls2:hover,
+#showControls3:hover,
+#hideControls3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card div audio {
+    margin-top: 5px;
+    height: 25px;
+}
+
+.card {
+    position: relative;
+}
+
+#btnAudio1,
+#btnAudio2,
+#btnAudio3 {
+    position: absolute;
+    bottom: 30px;
+    font-size: 16px;
+}
+
+#btnAudio1:hover,
+#btnAudio2:hover,
+#btnAudio3:hover {
+    margin-bottom: 1px;
+    font-size: 16.5px;
+}
+
+article {
+    grid-area: player;
+    background: #000;
+}
+
+.player nav {
+    width: 100vw;
+    margin-top: 25px;
+}
+
+.player nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.player i {
+    font-size: 34px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.progress_bar_time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress_bar {
+    height: 5px;
+    width: 50%;
+    background-color: #2a2a2a;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 5px;
+    background-color: #000;
+    background-color: #333;
+    border-radius: 5px
+}
+
+.footer {
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #1db954;
+}
+
+footer p,
+footer a {
+    color: #000;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #121212;
+}
