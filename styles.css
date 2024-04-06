@@ -77,7 +77,7 @@ ul li a {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
 
-    transition: ease-in 0.3s;
+    /* transition: ease-in 0.3s; */
 }
 
 ul li a:hover {
