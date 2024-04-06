@@ -1,25 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Um pouco sobre mim!</h1>
-    <h2>Seja bem vindo aqui!</h2>
-    <h3>Quem é o Bernard?</h3>
-    <p>Eu sou um cara tranquilo, que atua como Consultor e Desenvolvedor FullStack com Javascript.</p>
-    <h3>Formação</h3>
-    <p>Formado em Gestão de TI pela Fatec-Jundiaí, e atualmente cursando FullStack na Rockeseat.</p>
-    <h3>Hobbies</h3>
-    <p>Gosto de séries como HIMYM, TBBT, Friends.</p>
-    <img src="foto.png" alt="Foto de Bernard tomando uma Breja." style="width: 300px;">
-    <div>
-        <a href="../index.html">Voltar</a>
-    </div>
+    <header>
+        <div class="home" id="home">
+            <a class="home_link" href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span class="span_text">Página Inicial</span>
+            </a>
+        </div>
+        <h1>
+            Blog do Bernard
+        </h1>
+        <div class="linkedin" id="linkedin">
+            <a class="linkedin_link" href="https://linkedin.com/in/bernardsilva/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="span_linkedin">Linkedin</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="image">
+            <img src="foto.png" alt="Foto de Bernard tomando uma Breja." style="width: 300px;">
+        </div>
+        <h2>Seja bem vindo aqui!</h2>
+        <div class="about">
+            <h3>Quem é o Bernard?</h3>
+            <p>Eu sou um cara tranquilo, que atua como Consultor e Desenvolvedor FullStack com Javascript.</p>
+            <h3>Formação</h3>
+            <p>Formado em Gestão de TI pela Fatec-Jundiaí, e atualmente cursando FullStack na Rockeseat e estagiando na
+                Alpar Services com Servicenow.</p>
+            <h3>Histórico Profissional</h3>
+            <p>
+                Sou um entusiasta da tecnologia, sempre buscando novos conhecimentos e me desenvolver cada vez mais.
+            </p>
+            <p>
+                Há mais de 13 anos como Analista de Suporte Técnico em Software Houses, atuando com soluções
+                tecnológicas para os setores Farmacêutico, de Laboratórios Químicos e em Consultoria de TI.
+            </p>
+            <p>
+                Com amplo conhecimento e facilidade em regras de negócios viso desenvolver e potencializar soluções com
+                foco no cliente.
+            </p>
+            <h3>Linguaguens e Tecnologias</h3>
+            <div class="languages">
+                <p><strong>Programação: </strong>HTML, CSS, JavaScript, Git, GitHub, ReactJS*, Angular*,
+                    Node.js*, SQL.</p>
+                <p><strong>Databases: </strong>SQL Server, MySQL, PostgreSQL*, MongoDB*.</p>
+                <p><strong>Cloud: </strong>AWS, GCP, Azure, OCI.</p>
+                <p><strong>Servers: </strong>Ubuntu Server 20.04, Oracle Linux 8, Windows Server.</p>
+            </div>
+            <h3>Hobbies</h3>
+            <div class="hobbies">
+                <p>Gosto de séries como HIMYM, TBBT, Friends.</p>
+                <p>Tocar violão, guitarra e baixo.</p>
+                <p>Escutar música para relaxar e praticar atividades físicas.</p>
+                <p>E como sempre, estudando alguma tecnologia ou reforçando os conhecimentos já adquiridos.</p>
+            </div>
+        </div>
+        <p>*Tecnologias em processo de aprendizagem.</p>
+    </main>
+    <footer>
+        <p>
+            &copy;2024 Copyright - Desenvolvido por Bernard Silva
+        </p>
+    </footer>
 </body>
 
 </html>

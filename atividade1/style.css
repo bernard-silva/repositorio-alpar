@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #030712;
+    color: #fff;
+}
+
+/* START - PAGE INITIAL */
+.home a {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 10px 30px;
+    padding: 5px 15px;
+    border-radius: 45px;
+
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home a:hover {
+    box-shadow: 0 0 2px #fff;
+}
+
+.linkedin_link i {
+    font-size: 20px;
+}
+
+.span_text {
+    display: none;
+    font-size: 18px;
+}
+
+.home_link:hover .span_text {
+    display: contents;
+}
+
+/* END - PAGE INITIAL */
+
+/* START - LINKEDIN */
+.linkedin a {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 10px 30px;
+    padding: 5px 25px;
+    border-radius: 45px;
+
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkedin a:hover {
+    box-shadow: 0 0 2px #fff;
+}
+
+.span_linkedin {
+    font-size: 24px;
+}
+
+/* END - LINKEDIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+}
+
+.image {
+    box-shadow: 1px 2px 50px black;
+    border-radius: 50%;
+}
+
+.image img {
+    max-height: 200px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+.about {
+    border: 3px solid #121212;
+    border-radius: 15px;
+    margin: 0 300px;
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #e5e7eb;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.about :nth-child(6) {
+    min-width: 800px;
+}
+
+.languages {
+    margin-bottom: 20px;
+}
+
+.hobbies {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #030712;
+    color: #fff;
+}
