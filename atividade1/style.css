@@ -133,3 +133,95 @@ footer {
     background-color: #030712;
     color: #fff;
 }
+
+@media (max-width: 900px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    /* START - PAGE INITIAL */
+
+    .home a {
+        margin: 10px 10px;
+        padding: 5px 10px;
+    }
+
+    .home a:hover {
+        box-shadow: none;
+    }
+
+    .home i {
+        overflow: hidden;
+    }
+
+    .home_link:hover .span_text {
+        display: none;
+    }
+
+    /* END - PAGE INITIAL */
+
+    /* START - LINKEDIN */
+
+    .linkedin a {
+        margin: 10px 10px;
+        padding: 5px 10px;
+    }
+
+    .linkedin_link i {
+        font-size: 26px;
+    }
+
+    .linkedin a:hover {
+        box-shadow: none;
+    }
+
+    .span_linkedin {
+        display: none;
+    }
+
+    .linkedin_link:hover .span_linkedin {
+        display: none;
+    }
+
+    /* END - LINKEDIN */
+
+    .about {
+        max-width: 650px;
+    }
+
+    main {
+        margin: 0px;
+    }
+
+    .about div p {
+        /* width: 300px; */
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 530px) {
+    .about {
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .about {
+        max-width: 300px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
