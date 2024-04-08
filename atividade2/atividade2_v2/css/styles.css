@@ -72,8 +72,15 @@ header {
     font-size: 20px;
 }
 
+.login_link i {
+    display: none;
+}
+
 /* END - LOGIN */
 
+.hamburguer {
+    display: none;
+}
 
 header h1 {
     font-size: 36px;
@@ -224,4 +231,274 @@ footer ul li {
 
 footer ul li a:hover {
     color: var(--bg-secondary);
+}
+
+
+@media (max-width: 1440px) {
+    main {
+        padding: 30px 100px;
+        width: 924px;
+    }
+
+    ol {
+        width: 724px;
+    }
+
+    footer {
+        width: 924px;
+    }
+}
+
+@media (max-width: 970px) {
+    main {
+        padding: 30px 30px;
+        width: 800px;
+    }
+
+    ol {
+        width: 740px;
+    }
+
+    footer {
+        width: 800px;
+    }
+}
+
+@media (max-width: 835px) {
+    .home a:hover {
+        box-shadow: none;
+    }
+
+    .home_link:hover .span_text {
+        display: none;
+    }
+
+    .login a:hover {
+        box-shadow: none;
+    }
+
+    .span_login {
+        display: none;
+    }
+
+    .login_link i {
+        font-size: 26px;
+        display: contents;
+    }
+
+    main {
+        padding: 30px 30px;
+        width: 700px;
+    }
+
+    ol {
+        width: 640px;
+    }
+
+    footer {
+        width: 700px;
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width: 730px) {
+    main {
+        padding: 30px 50px;
+        width: 650px;
+    }
+
+    ol {
+        width: 550px;
+    }
+
+    table {
+        margin: 20px 80px;
+    }
+
+    footer {
+        width: 650px;
+    }
+}
+
+@media (max-width: 680px) {
+    main {
+        padding: 30px 25px;
+        width: 600px;
+    }
+
+    ol {
+        width: 550px;
+    }
+
+    footer {
+        width: 600px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .home i,
+    .login i {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 30px 50px;
+        width: 450px;
+    }
+
+    ol {
+        width: 350px;
+    }
+
+    section ul {
+        padding: 10px 20px;
+    }
+
+    .description_price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .description_price p {
+        width: 240px;
+    }
+
+    table {
+        margin: 20px 50px;
+    }
+
+    footer {
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 512px) {
+    table {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home,
+    .login {
+        display: none;
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 10px 5px;
+        padding: 5px 0px 10px 10px;
+    }
+
+    .hamburguer {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 16px 5px;
+        padding: 5px 10px 0px 10px;
+    }
+
+    .hamburguer i {
+        font-size: 26px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0 5px;
+        padding: 5px 10px 0px 10px;
+    }
+
+    .fa-xmark {
+        visibility: hidden;
+    }
+
+    #btnHamburguer .fa-bars.deactivate {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    #btnHamburguer .fa-xmark.active {
+        visibility: visible;
+    }
+
+    #nav {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        text-align: center;
+        top: 45px;
+        right: 0;
+        /* background-color: #942c0f; */
+        background-color: #54301d;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active {
+        height: calc(100vh - 45px);
+        visibility: visible;
+    }
+
+    #nav li {
+        list-style: none;
+        margin: 10px;
+        margin-top: 0;
+        padding: 25px 0 0 0;
+    }
+
+    #nav a {
+        color: var(--txt_primary);
+        text-decoration: none;
+    }
+
+    main {
+        padding: 30px 15px;
+        width: 350px;
+    }
+
+    ol {
+        width: 320px;
+    }
+
+    footer {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 30px 10px;
+        width: 300px;
+    }
+
+    ol {
+        width: 280px;
+    }
+
+    footer {
+        width: 300px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
