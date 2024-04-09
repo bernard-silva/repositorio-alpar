@@ -121,3 +121,90 @@
 .form_login button:hover {
     background: var(--bg-secondary-hover);
 }
+
+@media (max-width: 1024px) {
+    .about_container {
+        width: 600px;
+    }
+
+    .about_container div {
+        width: 300px;
+    }
+
+    .about_container img {
+        /* min-width: 200px; */
+    }
+
+    .form_control label,
+    .form_control input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 670px) {
+    .about_container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 350px;
+        margin-top: -30px;
+    }
+
+    .about_container div {
+        max-width: 300px;
+    }
+
+    .about_container img {
+        min-width: 100px;
+        margin-bottom: 0;
+    }
+
+    .form_control label,
+    .form_control input {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    html {
+        min-height: 100vh;
+    }
+
+    /* START - PAGE INITIAL */
+
+    .home {
+        position: absolute;
+        top: 0;
+        left: 35%;
+    }
+
+    .home a:hover {
+        box-shadow: none;
+    }
+
+    .span_text {
+        display: none;
+        font-size: 20px;
+    }
+
+    .home_link:hover .span_text {
+        display: none;
+    }
+
+    /* END - PAGE INITIAL */
+
+    .about h2 {
+        width: 300px;
+        margin: 0px auto 40px;
+    }
+}
+
+@media (max-width: 410px) {
+    .about h2 {
+        width: 250px;
+        margin: 0px auto 40px;
+    }
+}
