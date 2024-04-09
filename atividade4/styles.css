@@ -315,6 +315,29 @@ footer a:hover {
     }
 }
 
+@media (max-width: 835px) {
+    /* START - PAGE INITIAL */
+
+    .home a {
+        margin: 10px 10px;
+        padding: 5px 10px;
+    }
+
+    .home a:hover {
+        box-shadow: none;
+    }
+
+    .home i {
+        overflow: hidden;
+    }
+
+    .home_link:hover .span_text {
+        display: none;
+    }
+
+    /* END - PAGE INITIAL */
+}
+
 @media (max-width: 800px) {
     .card {
         width: 80vw;
