@@ -294,3 +294,80 @@ footer a:hover {
     text-decoration: underline;
     color: #121212;
 }
+
+@media (max-width: 2000px) {
+    .card {
+        width: 50vw;
+    }
+
+    .border_card>hr {
+        width: 115%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .card {
+        width: 60vw;
+    }
+
+    .border_card>hr {
+        width: 140%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 80vw;
+    }
+
+    .border_card>hr {
+        width: 190%;
+    }
+}
+
+@media (max-width: 769px) {
+    .card {
+        width: 80vw;
+    }
+
+    .border_card>hr {
+        width: 190%;
+    }
+}
+
+@media (max-width: 600px) {
+    .video_container video {
+        width: 90vw;
+    }
+
+    .card {
+        width: 90vw;
+    }
+
+    .border_card>hr {
+        width: 87vw;
+    }
+}
+
+@media (max-width: 563px) {
+    .card audio {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        display: grid;
+        grid-template-columns: 120px 1fr 50px;
+    }
+
+    .card audio {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 390px) {
+    .card div img {
+        width: 25vw;
+    }
+}
