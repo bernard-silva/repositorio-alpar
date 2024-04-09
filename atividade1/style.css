@@ -193,10 +193,12 @@ footer {
         margin: 0px;
     }
 
-    .about div p {
-        /* width: 300px; */
-        display: inline-block;
-        text-align: center;
+    .about .class_p {
+        width: 100vw;
+    }
+
+    .about .class_p>p {
+        max-width: 600px;
     }
 }
 
@@ -204,11 +206,19 @@ footer {
     .about {
         max-width: 500px;
     }
+
+    .about .class_p>p {
+        max-width: 450px;
+    }
 }
 
 @media (max-width: 530px) {
     .about {
         max-width: 390px;
+    }
+
+    .about .class_p>p {
+        max-width: 330px;
     }
 }
 
@@ -217,11 +227,17 @@ footer {
         font-size: 28px;
     }
 
-    .about {
-        max-width: 300px;
-    }
-
     footer p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 395px) {
+    .about {
+        max-width: 350px;
+    }
+
+    .about .class_p>p {
+        max-width: 290px;
     }
 }
