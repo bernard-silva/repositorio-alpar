@@ -32,6 +32,7 @@
 
 body {
     display: grid;
+    overflow-x: hidden;
     height: 100vh;
     grid-template-areas:
         'header'
