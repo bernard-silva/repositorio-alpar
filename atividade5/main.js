@@ -83,6 +83,7 @@ window.addEventListener('scroll', () => {
     if (percent > 0.8 && carregando == false) {
         carregando = true
         loadingEl.style.display = 'block'
+        loadingEl.style.top = '100%'
         fetch('https://pokeapi.co/api/v2/pokemon?limit=20&offset=' + offset)
             .then(response => response.json())
             .then(loadPokemons)
