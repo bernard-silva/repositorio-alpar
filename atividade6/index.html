@@ -9,23 +9,21 @@
 </head>
 
 <body>
-    <header>
+    <div class="container">
         <h1>Sistema Bancário</h1>
-    </header>
-    <main>
-        <section>
-            <form action="">
-                <label for="valor">Valor: </label>
-                <input type="text" id="valor" placeholder="Informe o valor para depósito ou saque...">
+        <form action="" id="form">
+            <label for="valor">Informe o valor desejado: </label>
+            <input type="text" id="valor" placeholder="Informe o valor para depósito ou saque...">
+            <div>
                 <button id="deposito_btn">Depositar</button>
                 <button id="saque_btn">Sacar</button>
-            </form>
-            <div id="saldo_container">
-                <p>Saldo: R$ <span id="saldo">0,00</span></p>
-                <p id="saldo_message"></p>
             </div>
-        </section>
-    </main>
+        </form>
+        <div id="result">
+            <p>Saldo: R$ <span id="saldo">0,00</span></p>
+            <p id="saldo_message"></p>
+        </div>
+    </div>
     <script src="banco.js"></script>
 </body>
 

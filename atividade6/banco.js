@@ -42,8 +42,10 @@ depositoBtn.addEventListener('click', (e) => {
         const deposito = parseFloat(contaBancaria.setDepositar(valor))
         saldo.innerText = deposito
         saldoMessage.innerText = 'Depósito realizado com sucesso!'
+        saldoMessage.style.color = 'green';
     } else {
         saldoMessage.innerText = 'Valor inválido, tente novamente!'
+        saldoMessage.style.color = 'red';
     }
 
     // console.log(valor)
@@ -61,10 +63,13 @@ saqueBtn.addEventListener('click', (e) => {
         const saque = parseFloat(contaBancaria.setSacar(valor))
         saldo.innerText = saque
         saldoMessage.innerText = 'Saque realizado com sucesso!'
+        saldoMessage.style.color = 'green';
     } else if (saldoAtual <= 0 || valor > saldoAtual) {
         saldoMessage.innerText = 'Saldo insuficiente!'
+        saldoMessage.style.color = 'orange';
     } else {
         saldoMessage.innerText = 'Valor inválido, tente novamente!'
+        saldoMessage.style.color = 'red';
     }
 
     // console.log(valor)
