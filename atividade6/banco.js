@@ -64,7 +64,7 @@ saqueBtn.addEventListener('click', (e) => {
         saldo.innerText = saque
         saldoMessage.innerText = 'Saque realizado com sucesso!'
         saldoMessage.style.color = 'green';
-    } else if (saldoAtual <= 0 || valor > saldoAtual) {
+    } else if (valor > saldoAtual) {
         saldoMessage.innerText = 'Saldo insuficiente!'
         saldoMessage.style.color = 'orange';
     } else {
