@@ -1,3 +1,9 @@
+let input = document.getElementById('valor')
+const depositoBtn = document.getElementById('deposito_btn')
+const saqueBtn = document.getElementById('saque_btn')
+let saldo = document.getElementById('saldo')
+let saldoMessage = document.getElementById('saldo_message')
+
 class ContaBancaria {
     constructor() {
         this.saldo = 0
@@ -26,53 +32,69 @@ class ContaBancaria {
 
 const contaBancaria = new ContaBancaria()
 
-let input = document.getElementById('valor')
-const depositoBtn = document.getElementById('deposito_btn')
-const saqueBtn = document.getElementById('saque_btn')
-let saldo = document.getElementById('saldo')
-let saldoMessage = document.getElementById('saldo_message')
+function converteParaNumber(valor) {
+    return parseFloat(valor.replace(',', '.'))
+}
+
+function converteValorComVirgula(valor) {
+    return valor.replace('.', ',')
+}
+
+function depositoSucesso(message) {
+    message.innerText = 'Depósito realizado com sucesso!'
+    message.style.color = 'green';
+    return
+}
+
+function saqueSucesso(message) {
+    message.innerText = 'Saque realizado com sucesso!'
+    message.style.color = 'green';
+    return
+}
+
+function saldoInsuficiente(message) {
+    message.innerText = 'Saldo insuficiente!'
+    message.style.color = 'orange';
+    return
+}
+
+function valorInvalido(message) {
+    message.innerText = 'Valor inválido, tente novamente!'
+    message.style.color = 'red';
+    return
+}
 
 depositoBtn.addEventListener('click', (e) => {
     e.preventDefault()
 
-    valor = parseFloat(input.value)
-    console.log(valor)
+    const valorInformado = input.value
+    valor = converteParaNumber(valorInformado)
 
     if (!isNaN || valor > 0) {
-        const deposito = parseFloat(contaBancaria.setDepositar(valor))
-        saldo.innerText = deposito
-        saldoMessage.innerText = 'Depósito realizado com sucesso!'
-        saldoMessage.style.color = 'green';
+        const deposito = contaBancaria.setDepositar(valor).toFixed(2)
+        saldo.innerText = converteValorComVirgula(deposito)
+        depositoSucesso(saldoMessage)
     } else {
-        saldoMessage.innerText = 'Valor inválido, tente novamente!'
-        saldoMessage.style.color = 'red';
+        valorInvalido(saldoMessage)
     }
-
-    // console.log(valor)
-    // console.log(contaBancaria)
 })
 
 saqueBtn.addEventListener('click', (e) => {
     e.preventDefault()
 
-    valor = parseFloat(input.value)
-    console.log(valor)
+    const valorInformado = input.value
+    valor = converteParaNumber(valorInformado)
 
     const saldoAtual = contaBancaria.getSaldo()
-    if (valor > 0 && valor <= saldoAtual || !isNaN) {
-        const saque = parseFloat(contaBancaria.setSacar(valor))
-        saldo.innerText = saque
-        saldoMessage.innerText = 'Saque realizado com sucesso!'
-        saldoMessage.style.color = 'green';
-    } else if (valor > saldoAtual) {
-        saldoMessage.innerText = 'Saldo insuficiente!'
-        saldoMessage.style.color = 'orange';
-    } else {
-        saldoMessage.innerText = 'Valor inválido, tente novamente!'
-        saldoMessage.style.color = 'red';
-    }
 
-    // console.log(valor)
-    // console.log(contaBancaria)
+    if (valor > 0 && valor <= saldoAtual || !isNaN) {
+        const saque = contaBancaria.setSacar(valor).toFixed(2)
+        saldo.innerText = converteValorComVirgula(saque)
+        saqueSucesso(saldoMessage)
+    } else if (valor > saldoAtual) {
+        saldoInsuficiente(saldoMessage)
+    } else {
+        valorInvalido(saldoMessage)
+    }
 })
 
