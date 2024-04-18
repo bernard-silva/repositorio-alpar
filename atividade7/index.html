@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Controle de Iluminação</title>
+</head>
+
+<body>
+    <h1>Controle de Iluminação</h1>
+    <main id="container">
+        <div id="sala">
+            <h2>Sala</h2>
+            <span><i class="fa-regular fa-lightbulb"></i></span>
+            <button onclick="toggleLight('sala')">Ligar/Desligar</button>
+            <div class="status" id="sala-status"></div>
+        </div>
+        <div id="cozinha">
+            <h2>Cozinha</h2>
+            <span><i class="fa-regular fa-lightbulb"></i></span>
+            <button onclick="toggleLight('cozinha')">Ligar/Desligar</button>
+            <div class="status" id="cozinha-status"></div>
+        </div>
+        <div id="quarto">
+            <h2>Quarto</h2>
+            <span><i class="fa-regular fa-lightbulb"></i></span>
+            <button onclick="toggleLight('quarto')">Ligar/Desligar</button>
+            <div class="status" id="quarto-status"></div>
+        </div>
+        <div id="banheiro">
+            <h2>Banheiro</h2>
+            <span><i class="fa-regular fa-lightbulb"></i></span>
+            <button onclick="toggleLight('banheiro')">Ligar/Desligar</button>
+            <div class="status" id="banheiro-status"></div>
+        </div>
+    </main>
+    <script src="./assets/js/iluminacao.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

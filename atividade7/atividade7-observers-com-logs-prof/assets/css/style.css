@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+.buttons button {
+    font-size: 24px;
+    padding: 16px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.house {
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.house div {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    font-size: 24px;
+    padding: 0 32px;
+    border: 5px solid black;
+}
+
+.house div.active {
+    background-color: yellow;
+    color: black;
+}
