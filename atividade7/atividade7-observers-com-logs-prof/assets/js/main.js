@@ -13,8 +13,9 @@ kitchenBtn.addEventListener('click', () => {
     AutomacaoLuzes.instance.toggle('kitchen')
 })
 
+console.log('fora inscrito room')
 AutomacaoLuzes.instance.inscrever(() => {
-    console.log('inscrito room')
+    console.log('dentro inscrito room')
     if (AutomacaoLuzes.instance.getState('room')) {
         console.log('getState room add active')
         roomViewEl.classList.add('active')
@@ -24,8 +25,9 @@ AutomacaoLuzes.instance.inscrever(() => {
     }
 })
 
+console.log('fora inscrito kitchen')
 AutomacaoLuzes.instance.inscrever(() => {
-    console.log('inscrito kitchen')
+    console.log('dentro inscrito kitchen')
     if (AutomacaoLuzes.instance.getState('kitchen')) {
         console.log('getState kitchen add active')
         kitchenViewEl.classList.add('active')
