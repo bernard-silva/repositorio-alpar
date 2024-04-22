@@ -10,16 +10,21 @@ class WeatherController {
     }
 
     async getWeather(city) {
-        const data = await this.service.fetchWeather(city)
-        this.model.update(
-            data.name,
-            data.main.temp,
-            data.weather[0].description,
-            data.weather[0].icon,
-            data.main.humidity,
-            data.wind.speed
-        )
-        this.renderWeather()
+        try {
+            const data = await this.service.fetchWeather(city)
+            this.model.update(
+                data.name,
+                data.main.temp,
+                data.weather[0].description,
+                data.weather[0].icon,
+                data.main.humidity,
+                data.wind.speed
+            )
+            this.renderWeather()
+        } catch (error) {
+            this.view.render(null);
+            console.error(error);
+        }
     }
 
     renderWeather() {
