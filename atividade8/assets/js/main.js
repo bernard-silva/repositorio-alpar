@@ -10,7 +10,7 @@ searchButton.addEventListener('click', () => {
 
 cityInput.addEventListener("keyup", (e) => {
     const city = cityInput.value.trim()
-    if (e.code === "Enter") {
+    if (e.code === "Enter" || e.keyCode === 13) {
         WeatherController.instance.getWeather(city)
     }
 })
