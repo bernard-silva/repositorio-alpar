@@ -142,6 +142,12 @@ p {
     display: none;
 }
 
+#error-message {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
 @keyframes l3 {
     to {
         transform: rotate(1turn)

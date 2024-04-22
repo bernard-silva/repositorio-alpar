@@ -4,6 +4,11 @@ class WeatherView {
     }
 
     render(weatherData) {
+        if (!weatherData) {
+            this.weatherContainer.innerHTML = '<p id="error-message">Cidade não encontrada, por favor tente novamente.</p>'
+            return
+        }
+
         this.weatherContainer.innerHTML = `
             <h2>${weatherData.city}</h2>
             <p id="tempeture">${weatherData.temperature}°C</p>

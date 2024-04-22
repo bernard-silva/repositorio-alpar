@@ -9,10 +9,10 @@ class WeatherService {
         try {
             const response = await fetch(url)
             if (!response.ok) {
-                throw new Error(`Cidade não encontrada, por favor tente novamente. Status do Erro: ${response.status}`)
+                const errorMessage = `Cidade não encontrada, por favor tente novamente. Status do Erro: ${response.status}`
+                throw new Error(errorMessage)
             }
             const data = await response.json()
-            console.log(data)
             return data
         } catch (error) {
             throw error
