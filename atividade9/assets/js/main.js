@@ -33,20 +33,38 @@ function showValues() {
     list.innerHTML = ''
 
     for (let i = 0; i < values.length; i++) {
-        list.innerHTML += `
-            <div div class="task-wrapper" id = "task-wrapper-${values[i]['id']}" >
-                <div class="task-wrapper-inner">
-                    <input type="checkbox" name="task-input-chk" id="task-input-chk-${values[i]['id']}" onclick='toggleCompletedTask(${values[i]['id']})' ${values[i]['isCompleted']}>
-                    <p id="task-${values[i]['id']}">${values[i]['name']}</p>
+        if (values[i].isCompleted == 'checked') {
+            list.innerHTML += `
+                <div div class="task-wrapper" id = "task-wrapper-${values[i]['id']}" >
+                    <div class="task-wrapper-inner">
+                        <input type="checkbox" name="task-input-chk" id="task-input-chk-${values[i]['id']}" onclick='toggleCompletedTask(${values[i]['id']})' ${values[i]['isCompleted']}>
+                        <p id="task-${values[i]['id']}"><strike>${values[i]['name']}</strike></p>
+                    </div>
+                    <div class="task-wrapper-inner">
+                        <p id="time-${values[i]['id']}"><strike>${values[i]['date']}</strike></p>
+                        <button type="button" id="trash-${values[i]['id']}" class="trash-btn" onclick='removeTask(${values[i]['id']})'>
+                            <span><i class="fa-regular fa-trash-can"></i></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="task-wrapper-inner">
-                    <p id="time-${values[i]['id']}">${values[i]['date']}</p>
-                    <button type="button" id="trash-${values[i]['id']}" class="trash-btn" onclick='removeTask(${values[i]['id']})'>
-                        <span><i class="fa-regular fa-trash-can"></i></span>
-                    </button>
+            `
+        } else {
+
+            list.innerHTML += `
+                <div div class="task-wrapper" id = "task-wrapper-${values[i]['id']}" >
+                    <div class="task-wrapper-inner">
+                        <input type="checkbox" name="task-input-chk" id="task-input-chk-${values[i]['id']}" onclick='toggleCompletedTask(${values[i]['id']})' ${values[i]['isCompleted']}>
+                        <p id="task-${values[i]['id']}">${values[i]['name']}</p>
+                    </div>
+                    <div class="task-wrapper-inner">
+                        <p id="time-${values[i]['id']}">${values[i]['date']}</p>
+                        <button type="button" id="trash-${values[i]['id']}" class="trash-btn" onclick='removeTask(${values[i]['id']})'>
+                            <span><i class="fa-regular fa-trash-can"></i></span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        `
+            `
+        }
     }
 }
 

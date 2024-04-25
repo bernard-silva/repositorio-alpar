@@ -29,8 +29,8 @@ body {
 
     background: #FF41B3;
     background: linear-gradient(to right, #FF41B3 0%, #D453C3 8%, #936DDC 16%, #6281EE 25%, #3793FF 30%);
-    /* -webkit-background-clip: text; */
-    background-clip: text;
+    -webkit-background-clip: text;
+    /* background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 
