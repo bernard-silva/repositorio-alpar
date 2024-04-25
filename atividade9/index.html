@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Todo app</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo app</h1>
+        <div class="input-wrapper">
+            <input type="text" id="task-input-txt" placeholder="Task name" />
+            <div class="button-wrapper">
+                <button type="button" id="time-btn"><span><i class="fa-solid fa-clock"></i></span></button>
+                <input type="datetime-local" id="datetime-input" style="display: none;">
+                <button type="button" id="add-btn">Add</button>
+            </div>
+        </div>
+        <div class="task-container">
+            <div class="task-wrapper" id="task-wrapper-1">
+                <div class="task-wrapper-inner">
+                    <input type="checkbox" name="task-input-chk" id="task-input-chk-1">
+                    <p id="task-1"><strike>Drink water</strike></p>
+                </div>
+                <div class="task-wrapper-inner">
+                    <p id="time-1"><strike>7:55 PM</strike></p>
+                    <button type="button" id="trash-1" class="trash-btn">
+                        <span><i class="fa-regular fa-trash-can"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="task-wrapper" id="task-wrapper-2">
+                <div class="task-wrapper-inner">
+                    <input type="checkbox" name="task-input-chk" id="task-input-chk-2">
+                    <p id="task-2">Go to walk</p>
+                </div>
+                <div class="task-wrapper-inner">
+                    <p id="time-2">8:00 PM</p>
+                    <button type="button" id="trash-2" class="trash-btn">
+                        <span><i class="fa-regular fa-trash-can"></i></span>
+                    </button>
+                </div>
+            </div>
+            <div class="task-wrapper" id="task-wrapper-3">
+                <div class="task-wrapper-inner">
+                    <input type="checkbox" name="task-input-chk" id="task-input-chk-3">
+                    <p id="task-3">Write an email</p>
+                </div>
+                <div class="task-wrapper-inner">
+                    <p id="time-3">8:37 PM</p>
+                    <button type="button" id="trash-3" class="trash-btn">
+                        <span><i class="fa-regular fa-trash-can"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
