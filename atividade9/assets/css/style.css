@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    background-color: #181717;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 450px;
+
+    padding: 16px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.container>h1 {
+    text-align: start;
+    margin-bottom: 16px;
+
+    background: #FF41B3;
+    background: linear-gradient(to right, #FF41B3 0%, #D453C3 8%, #936DDC 16%, #6281EE 25%, #3793FF 30%);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+    padding: 6px 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #2e2e2e;
+    border-radius: 6px;
+}
+
+.input-wrapper input {
+    background-color: #2e2e2e;
+    border: none;
+}
+
+.input-wrapper input:focus {
+    outline: transparent;
+}
+
+.input-wrapper i {
+    color: #fff;
+    font-size: 16px;
+}
+
+#time-btn,
+#add-btn {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #151515;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: transparent;
+}
+
+#task-input-txt {
+    padding-inline: 4px;
+    width: 290px;
+    font-size: 18px;
+}
+
+.task-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 16px;
+    padding-inline: 4px;
+}
+
+.task-wrapper-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+/* START - CHECKBOX COM ÍCONE */
+input[type='checkbox'] {
+    appearance: none;
+
+    height: 26px;
+    width: 26px;
+    border: 1.5px solid #3b9464;
+    padding: 2px 4px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    outline: transparent;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+input[type='checkbox']:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f00c';
+    font-size: 20px;
+    color: #2a2a2a;
+    display: none;
+}
+
+input[type='checkbox']:hover {
+    background-color: #2a2a2a;
+}
+
+input[type='checkbox']:checked {
+    background-color: #3b9464;
+}
+
+input[type='checkbox']:checked::after {
+    display: block;
+}
+
+/* END - CHECKBOX COM ÍCONE */
+
+strike {
+    color: #7a7a7a;
+}
+
+.trash-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.trash-btn:hover {
+    cursor: pointer;
+}
+
+.trash-btn i {
+    color: #fd4f4f;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+    #task-input-txt {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    #task-input-txt {
+        max-width: 163px;
+    }
+}
+
+@media (max-width: 320px) {
+    #task-input-txt {
+        max-width: 160px;
+    }
+}
