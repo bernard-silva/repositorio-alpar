@@ -4,48 +4,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Atividades do Rocket Program - HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfólio - Alpar Rocket Program</title>
 </head>
 
 <body>
+    <header id="home">
+        <div class="header_container">
+            <a href="#home">
+                <img src="./assets/images/alpar-site-logo.png" alt="logotipo da empresa Alpar">
+            </a>
+            <nav class="nav">
+                <button class="hamburger"></button>
+                <ul class="nav-list">
+                    <li><a href="#about" id="link_about">SOBRE</a></li>
+                    <li><a href="#skills" id="link_skills">SKILLS</a></li>
+                    <li><a href="#portfolio" id="link_portfolio">PORTFÓLIO</a></li>
+                    <li><a href="#hobbies" id="link_hobbies">HOBBIES</a></li>
+                </ul>
+            </nav>
+            <div class="social_container header">
+                <a href="https://github.com/bernard-silva/" target="_blank" class="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/bernardsilva" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </header>
     <main>
-        <header>
-            <h1>Rocket Program</h1>
-        </header>
-        <ul>
-            <li>
-                <a href="./atividade1/index.html">Atividade 1</a>
-            </li>
-            <li>
-                <a href="./atividade2/atividade2_v2/index.html">Atividade 2</a>
-            </li>
-            <li>
-                <a href="./atividade3/index.html">Atividade 3</a>
-            </li>
-            <li>
-                <a href="./atividade4/index.html">Atividade 4</a>
-            </li>
-            <li>
-                <a href="./atividade5/index.html">Atividade 5</a>
-            </li>
-            <li>
-                <a href="./atividade6/index.html">Atividade 6</a>
-            </li>
-            <li>
-                <a href="./atividade7/index.html">Atividade 7</a>
-            </li>
-            <li>
-                <a href="./atividade8/index.html">Atividade 8</a>
-            </li>
-            <li>
-                <a href="./atividade9/index.html">Atividade 9</a>
-            </li>
-        </ul>
+        <div class="main_container">
+            <section class="about" id="about">
+                <h2>Sobre mim</h2>
+                <div class="about_container">
+                    <img src="./assets/images/foto.png" alt="foto de apresentação">
+                    <div>
+                        <p>Olá, sou</p>
+                        <h1>Bernard Silva</h1>
+                        <h3>Um cara tranquilo, que atua como Consultor e Desenvolvedor Web com JavaScript</h3>
+                        <p>Formado em Gestão de TI pela Fatec (2010), cursando Desenvolvimento na Rocketseat e
+                            estagiando na Alpar Services com Servicenow.
+                        </p>
+                        <p>
+                            Há mais de 13 anos como Analista de Suporte Técnico em Software Houses com foco nas
+                            regras de negócio e no cliente.
+                        </p>
+                        <p>
+                            Sou um entusiasta da tecnologia, sempre buscando novos conhecimentos e me desenvolver cada
+                            vez mais.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="skills_title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills_container">
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/html.png" alt="logo do HTML">
+                        <span class="tooltiptext">HTML</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_css">
+                        <img src="./assets/images/icons/css.png" alt="logo do HTML">
+                        <span class="tooltiptext">CSS</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_javascript">
+                        <img src="./assets/images/icons/javascript.svg" alt="logo do HTML">
+                        <span class="tooltiptext">JavaScript</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/git.png" alt="logo do HTML">
+                        <span class="tooltiptext">Git</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/github.png" alt="logo do HTML">
+                        <span class="tooltiptext">GitHub</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/sql.png" alt="logo do HTML">
+                        <span class="tooltiptext">PL/SQL</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/sqlserver.png" alt="logo do HTML">
+                        <span class="tooltiptext">SQL Server</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/mysql.png" alt="logo do HTML">
+                        <span class="tooltiptext">MySQL</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/aws.svg" alt="logo do HTML">
+                        <span class="tooltiptext">AWS Cloud</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/gcp.png" alt="logo do HTML">
+                        <span class="tooltiptext">GCP Cloud</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/azure.png" alt="logo do HTML">
+                        <span class="tooltiptext">Azure Cloud</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/ubuntu.png" alt="logo do HTML">
+                        <span class="tooltiptext">Ubuntu Server</span>
+                    </div>
+                    <div class="logo_skills tooltip" id="logo_html">
+                        <img src="./assets/images/icons/windows-server.png" alt="logo do HTML">
+                        <span class="tooltiptext">Windows Server</span>
+                    </div>
+                </div>
+            </section>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <h2>Portfólio</h2>
+                <div class="portfolio_container">
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade2.png" alt="">
+                        <h4>
+                            Cardápio de uma Cafeteria
+                        </h4>
+                        <p>HTML/CSS/JS (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade2/atividade2_v2/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade2/atividade2_v2"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade3.png" alt="">
+                        <h4>
+                            Tela de Login da Cafeteria
+                        </h4>
+                        <p>HTML/CSS (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade3/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade3"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade4.png" alt="">
+                        <h4>
+                            podHIMYM
+                        </h4>
+                        <p>JS Funcional (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade4/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade4"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade5.png" alt="">
+                        <h4>
+                            Pokédex
+                        </h4>
+                        <p>JS com Fetch API (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade5/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade5"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade6.png" alt="">
+                        <h4>
+                            Sistema Bancário
+                        </h4>
+                        <p>JS com POO (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade6/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade6"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade7.png" alt="">
+                        <h4>
+                            Controle de Iluminação
+                        </h4>
+                        <p>JS/POO/Observers (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade7/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade7"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade8.png" alt="">
+                        <h4>
+                            Clima e Previsão do Tempo
+                        </h4>
+                        <p>JS/POO/API/MVC (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade8/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade8"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade9.png" alt="">
+                        <h4>
+                            Todo App
+                        </h4>
+                        <p>JS/localStorage (Frontend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="./atividade9/index.html" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-solid fa-globe"></i>Deploy
+                                </button>
+                            </a>
+                            <a href="https://github.com/bernard-silva/repositorio-alpar/tree/main/atividade9"
+                                target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade9.png" alt="">
+                        <h4>
+                            Todo App
+                        </h4>
+                        <p>JS/Node.js (Frontend/Backend)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="https://github.com/bernard-silva/backend-todo-mine" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_card">
+                        <img src="./assets/images/protejos/atividade10.png" alt="">
+                        <h4>
+                            Agenda de Eventos
+                        </h4>
+                        <p>AngularJS/Node.js (Front/Back)</p>
+                        <div class="portfolio_btn_container">
+                            <a href="https://github.com/bernard-silva/backend-agenda-eventos" target="_blank">
+                                <button type="button" class="link_site_btn">
+                                    <i class="fa-brands fa-github"></i>GitHub
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hobbies" id="hobbies">
+                <h2>Hobbies</h2>
+                <div class="hobbies_container">
+                    <div class="hobbies_card">
+                        <a href="https://berns-easter-eggs.vercel.app/" target="_blank">
+                            <img src="./assets/images/hobbies/HIMYM.jpg" alt="">
+                        </a>
+                        <h4>
+                            Sitcoms
+                        </h4>
+                        <p>Séries de comédia como HIMYM, TBBT, Friends são minha diversão e melhor lazer, onde dou
+                            risada e ainda aproveito para praticar o inglês.
+                        </p>
+                    </div>
+                    <div class="hobbies_card">
+                        <img src="./assets/images/hobbies/musculacao.jpg" alt="">
+                        <h4>
+                            Atividade Física
+                        </h4>
+                        <p>Retomei esse ano na musculação com foco e constância, considero atividade física e
+                            contato com a natureza essenciais.
+                        </p>
+                    </div>
+                    <div class="hobbies_card">
+                        <img src="./assets/images/hobbies/musica.jpg" alt="">
+                        <h4>
+                            Música
+                        </h4>
+                        <p>Gosto de ouvir e tocar músicas no geral, em especial rock, onde me aventuro a
+                            tocar violão, guitarra e baixo, quem sabe um dia sai um álbum rs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>&copy;2024 Copyright - Desenvolvido por Bernard Silva </p>
+        <div class="footer_container">
+            <div class="social_container">
+                <a href="https://github.com/bernard-silva/" target="_blank" class="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/bernardsilva" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy;Copyright 2024 - Todos os direitos reservados</p>
+        </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
