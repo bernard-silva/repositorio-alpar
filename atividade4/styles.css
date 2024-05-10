@@ -42,6 +42,41 @@ body {
     grid-template-rows: 90px 1fr 90px 30px;
 }
 
+/* START: WARNING */
+
+.warning {
+    padding-top: 6px;
+    background-color: rgb(255, 0, 0);
+    height: 32px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateY(-32px);
+    animation: showing 1s ease both;
+}
+
+@keyframes showing {
+    0% {
+        transform: translateY(-32px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.close-warning-btn {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 18px;
+    cursor: pointer;
+}
+
+/* END: WARNING */
+
 header {
     grid-area: header;
     text-align: center;

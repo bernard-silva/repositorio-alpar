@@ -12,6 +12,14 @@ let audio3 = document.getElementById('audio3')
 
 let btnMainPlay = document.getElementById('btnMainPlay')
 
+// CODE FOR THE WARNING
+const warning = document.querySelector('.warning')
+const closeBtn = document.querySelector('.close-warning-btn')
+
+closeBtn.addEventListener('click', () => {
+    warning.style.display = 'none'
+})
+
 // VIDE #OBSERVACAO - (START)
 let showControls = document.getElementById('showControls')
 let hideControls = document.getElementById('hideControls')
