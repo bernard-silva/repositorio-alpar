@@ -29,6 +29,7 @@
 - [Atividade 9 - Todo App (Frontend)](#activ9_pt)
 - [Atividade 10 - Todo App (Frontend/Backend)](#activ10_pt)
 - [Atividade 11 - Agenda de Eventos (Frontend/Backend)](#activ11_pt)
+- [Atividade 12 - Ecommerce Berns Store (Frontend/Backend)](#activ12_pt)
 - [Como utilizar](#running_pt)
 
 
@@ -129,6 +130,14 @@
 - Linguagens e Tecnologias: **AngularJS/Node.js/Express/Prisma/SQLite (Frontend/Backend)**
 - GitHub: https://github.com/bernard-silva/backend-agenda-eventos
 
+## 🎯 Atividade 12 - Ecommerce Berns Store  <a name = "activ12_pt"></a>
+
+  <img alt="Ecommerce Berns Store" src="./assets/images/protejos/atividade12.png" width="60%">
+
+- Ecommerce Berns Store de Tecnologia onde é possível se cadastrar, logar, adicionar produtos ao carrinho, finalizar compras, visualizar as compras realizadas. Em perfil de admin é possível listar todos os produtos, editar e adicionar novos produtos, onde ao clicar no logotipo sempre direciona para a home.
+- Linguagens e Tecnologias: **AngularJS/Bootstrap/Node.js/Express/Prisma/SQLite (Frontend/Backend)**
+- GitHub: https://github.com/bernard-silva/ecommerce-berns-store-node-angularjs
+
 ## 🖥️ Como utilizar <a name = "running_pt"></a>
 
 Clone o projeto:
@@ -154,6 +163,7 @@ git clone https://github.com/bernard-silva/repositorio-alpar.git
 - [Activity 9 - Todo App (Frontend)](#activ9_en)
 - [Activity 10 - Todo App (Frontend/Backend)](#activ10_en)
 - [Activity 11 - Events Calendar (Frontend/Backend)](#activ11_en)
+- [Activity 12 - Ecommerce Berns Store (Frontend/Backend)](#activ12_en)
 - [How to use](#running_en)
 
 
@@ -253,6 +263,14 @@ git clone https://github.com/bernard-silva/repositorio-alpar.git
 - Registration of Event Calendar allowing editing and deletion using AngularJS on the frontend and Node.js/Express on the backend with ORM Prisma.
 - Languages ​​and Technologies: **AngularJS/Node.js/Express/Prisma/SQLite (Frontend/Backend)**
 - GitHub: https://github.com/bernard-silva/backend-agenda-eventos
+
+## 🎯 Activity 12 - Ecommerce Berns Store <a name = "activ12_en"></a>
+
+   <img alt="Ecommerce Berns Store" src="./assets/images/protejos/atividade12.png" width="60%">
+
+- Ecommerce Berns Technology Store where it is possible to register, log in, add products to the cart, complete purchases, view purchases made. In the admin profile you can list all products, edit and add new products, where clicking on the logo always takes you to the home page.
+- Languages and Technologies: **AngularJS/Bootstrap/Node.js/Express/Prisma/SQLite (Frontend/Backend)**
+- GitHub: https://github.com/bernard-silva/ecommerce-berns-store-node-angularjs
 
 ## 🖥️ How to use <a name = "running_en"></a>
 
